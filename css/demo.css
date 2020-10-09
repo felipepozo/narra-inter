@@ -19,15 +19,15 @@ body {
 	--color-text: #fff;
 	--color-link: #5f5f5f;
 	--color-link-hover: #ff963b;
-	--color-enter: #fff;
-	--color-title: #fff;
-	--color-subtitle: #5f5f5f;
+	--color-enter: #b5651d;
+	--color-title: #b5651d;
+	--color-subtitle: #987654;
 	--color-menu-item: #000;
 	--color-menu-item-hover: #ff963b;
-	--color-menu-item-hover-alt: #8544da;
-	--color-content: #222325;
+	--color-menu-item-hover-alt: #ff963b;
+	--color-content: #fff;
 	--color-content-fixed: #ddd;
-	--font-alt: 200 6vw/1 'Spectral', serif;
+	--font-alt: 200 6vw/1 'Caveat', serif;
 	--color-next: #5f5f5f;
 	--color-next-hover: #8544da;
 }
@@ -284,7 +284,7 @@ main {
 }
 
 .demo-1 .content--fixed {
-	background-image: url(../img/bg1.jpg);
+	background-image: url(../img/cofi.jpg);
 }
 
 .demo-2 .content--fixed {
@@ -333,9 +333,10 @@ main {
 }
 
 .content__title {
-	font: var(--font-alt);
+	font-family: Caveat;
 	color: var(--color-title);
 	margin: 0;
+	font-size: 100px;
 	line-height: 1;
 }
 
@@ -349,9 +350,9 @@ main {
 }
 
 .content__subtitle {
-	font: var(--font-alt);
-	font-size: 1.5em;
-	color: var(--color-subtitle);
+	font: Arial;
+	font-size: 40px;
+	color: #b5651d;
 	padding: 0.5em 0 0 0;
 	margin: 0;
 }
@@ -393,13 +394,52 @@ main {
 	flex-wrap: wrap;
 }
 
-.menu__item {
-	font: var(--font-alt);
+.menu__itemprime {
+	font-family: "Sansita Swashed", cursive;
 	font-size: 3vw;
-	color: var(--color-menu-item);
+	color: white;
+	margin: 0 1em;
+	position: relative;
+	bottom: 100px;
+	line-height: 1;
+}
+.menu__item {
+	font-family: "Sansita Swashed", cursive;
+	font-size: 20px;
+	color: white;
 	margin: 0 1em;
 	position: relative;
 	line-height: 1;
+}
+
+#header {
+	width: 100%;
+	font-family: News Cycle, sans-serif;
+	font-size: 25px;
+	border-style: outset;
+	padding: 20px;
+	background-color: rgb(35, 10, 0);
+	position: relative;
+	bottom: 150px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.spoti__imag {
+bottom: 280px;
+left: 150px;
+}
+
+#boxed {
+	background-color: rgb(110, 50, 10);
+	opacity: 0.97;
+	padding: 50px;
+	border-radius: 75px;
+	border-style: double;
+	border-color: white;
+	border-width: 7.5px;
 }
 
 .menu__item:hover,
